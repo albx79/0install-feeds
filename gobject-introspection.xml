@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://www.albx79.it/0install/gobject-introspection.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:compile="http://zero-install.sourceforge.net/2006/namespaces/0compile">
+  <name>gobject-introspection</name>
+  <summary>a middleware layer between C libraries (using GObject) and language bindings</summary>
+  <description>
+GObject introspection is a middleware layer between C libraries (using GObject)
+and language bindings. The C library can be scanned at compile time and generate
+a metadata file, in addition to the actual native C library. Then at runtime,
+language bindings can read this metadata and automatically provide bindings to
+call into the C library.</description>
+  <homepage>https://wiki.gnome.org/action/show/Projects/GObjectIntrospection?action=show&amp;redirect=GObjectIntrospection</homepage>
+  <implementation arch="Linux-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=bd06c17a6b6fb870e0448582f4105d4913728db6" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-02-16" stability="stable" version="1.38.0">
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <version not-before="2.38.2"/>
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <version not-before="2.38.2"/>
+      <environment insert="lib/pkgconfig" mode="prepend" name="PKG_CONFIG_PATH"/>
+    </requires>
+    <archive extract="gobject-introspection-1.38.0" href="http://ftp.gnome.org/pub/GNOME/sources/gobject-introspection/1.38/gobject-introspection-1.38.0.tar.xz" size="1226324" type="application/x-xz-compressed-tar"/>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJTCgsPAAoJEBn+koPecTkj6DkIAIpEQW2r9YeO5wuFcBvsvz5L8OKj5UU6XQeG
+SlnZtkPISMiW1VcJ/Pem/YNccoyMiXehG+xTtTz5dc8hA2z0NbUMUp+HEpoPM35XBgKob2WXjb6o
+GTgsFpMFyt16Rj+RRVG6Drh+L9vlkNAHVU0J+VlDbuCn0GLOCZoccXMmP3sfPgq/llyVZu1MyddH
+50ssQRa3vhnnnF1qkiqC1KWG6FpqPH63YF/OKYPMcHWndovSC4qKManTVhzZrEgp/oFRcBv4LccQ
+t9LdAbO2DyrifZj3fdrWG7i4cxnJly992aRnM3cXvpMAKBIDAitjnvuJ8N9DS4cSiYv9qXjnDemt
+5+U=
+
+-->

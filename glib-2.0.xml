@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://www.albx79.it/0install/glib-2.0.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:compile="http://zero-install.sourceforge.net/2006/namespaces/0compile">
+  <name>glib-2.0</name>
+  <summary>a library containing many useful C routines</summary>
+  <description>
+GLib provides the core application building blocks for libraries and
+applications written in C. It provides the core object system used in GNOME, the
+main loop implementation, and a large set of utility functions for strings and
+common data structures.</description>
+  <homepage>https://developer.gnome.org/glib/</homepage>
+  <implementation arch="Linux-x86_64" id="sha1new=f8010999c05738b6a5df732d37390fccf3678925" released="2014-02-23" stability="stable" version="2.38.2">
+    <archive extract="glib-2.0-linux-x86_64" href="http://www.albx79.it/0install/glib-2.0-linux-x86_64.tgz" size="6554422" type="application/x-compressed-tar"/>
+  </implementation>
+  <implementation arch="Linux-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=cca60195ff589ec0b61bbacdf053f9264a187f14" released="2014-02-16" stability="buggy" version="2.38.0">
+    <archive extract="glib-2.38.0" href="http://ftp.acc.umu.se/pub/gnome/sources/glib/2.38/glib-2.38.0.tar.xz" size="6679660" type="application/x-xz-compressed-tar"/>
+  </implementation>
+  <implementation arch="Linux-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=6e0cbe61ce6be55725a8bb6bc4639d6965d35212" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-02-16" stability="stable" version="2.38.2">
+    <archive extract="glib-2.38.2" href="http://ftp.acc.umu.se/pub/gnome/sources/glib/2.38/glib-2.38.2.tar.xz" size="6718296" type="application/x-xz-compressed-tar"/>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJTCdnMAAoJEBn+koPecTkjNOgH/iIGz0o6RYYkmXXOl3Oh3I3XPO22MCFXhTDe
+kCtHAOgDxrkTOrmk27Q5I1q3vBXPlRbsS22ZEdtnqCr1isUcoRlYe76RgBfppNenDq9hDWeBXZj2
+40G7z5Td8M08ocfY9WxsAujZcH5+97g88xcED/VM8ZFlJTHugVa3YlJxgOJ1LC0h/k+/nBsoxTBe
+NTyy4XZ2sctVb5C7TKcjbQFkBkU426cWg98smtFGElQJqR5E88gwQcAm5exbmKmdFzpSA6Mo5qPg
+Pfi74l7OdsUz8E4ejVRITZM6gt0vsqXQC/4RVbgAPPmda9Tt1GvywkxQM3ANmQ2g1fdziBmdNKwH
+Jl4=
+
+-->

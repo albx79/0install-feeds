@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://www.albx79.it/0install/vala.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:compile="http://zero-install.sourceforge.net/2006/namespaces/0compile">
+  <name>valac</name>
+  <summary>a new programming language that aims to bring modern programming language features to GNOME developers </summary>
+  <description>
+Vala is a new programming language that aims to bring modern programming
+language features to GNOME developers without imposing any additional runtime
+requirements and without using a different ABI compared to applications and
+libraries written in C.</description>
+  <homepage>https://wiki.gnome.org/Projects/Vala</homepage>
+  <category>Development</category>
+  <implementation arch="*-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=8e541cb57d2d83f792d04a1d9564b49cf9edf188" license="OSI Approved :: GNU Lesser General Public License (LGPL)" main="valac" released="2014-02-16" stability="stable" version="0.23.2">
+    <archive extract="vala-0.23.2" href="http://ftp.acc.umu.se/pub/gnome/sources/vala/0.23/vala-0.23.2.tar.xz" size="2664888" type="application/x-xz-compressed-tar"/>
+    <requires interface="http://www.albx79.it/0install/gobject-introspection.xml">
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+      <environment insert="lib/pkgconfig" mode="prepend" name="PKG_CONFIG_PATH"/>
+    </requires>
+  </implementation>
+  <implementation arch="Linux-x86_64" doc-dir="share/man/man1" id="sha1new=698a3b641a33baa307d4ba13a5ee4f4aebb629d3" license="OSI Approved :: GNU General Public License v3" main="bin/valac" released="2014-02-23" stability="stable" version="0.23.2">
+    <archive extract="vala-linux-x86_64" href="http://www.albx79.it/0install/vala-linux-x86_64.tgz" size="6640613" type="application/x-compressed-tar"/>
+    <requires interface="http://www.albx79.it/0install/gobject-introspection.xml">
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/vala.xml">
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJTQWL8AAoJEBn+koPecTkj0K0IAMcjwuPu098o8jV9gbyU8s96+UTCN9yeDHih
+Simb2nglPMxxUYmvsSigdiMgw3O8AGJ64XQRvvrBMXTxVAnWF/Ge+iUDe5Iv0D3kZ2zNEamlNw96
+2igdP74jgErhdsf+W46Kl7hMXiJWR8CSLt26gzteIEeLNK+2t5zHJ1gj5E0bYhqgf1pkoP47Q23k
+DYd9iC+aFHgnKY3fX4Uq7qUehFt6g1p67CI8v/jz/gWXWgPJ1Ia6+Vm7+zyCGdgR4gdt/9mklvps
+MQ8JLiucXuz7PS9NcKU90iNmSWibDb+898dmXUd+1a68Sso657ABamHtopsyMWl/5irkvjN5v6A6
+hZA=
+
+-->

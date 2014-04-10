@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://www.albx79.it/0install/gitg.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:compile="http://zero-install.sourceforge.net/2006/namespaces/0compile">
+  <name>gitg</name>
+  <summary>the GNOME GUI client to view git repositories</summary>
+  <description>
+gitg is the GNOME GUI client to view git repositories.</description>
+  <homepage>https://wiki.gnome.org/action/show/Apps/Gitg</homepage>
+  <category>Development</category>
+  <icon href="https://git.gnome.org/browse/gitg/plain/data/icons/hicolor_apps_256x256_gitg.png" type="image/png"/>
+  <implementation arch="Linux-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=da48007c638652f6aa85ea095c190d9e6eb1662b" released="2014-02-23" stability="stable" version="0.3.2">
+    <archive extract="gitg-0.3.2" href="https://download.gnome.org/sources/gitg/0.3/gitg-0.3.2.tar.xz" size="1080536" type="application/x-xz-compressed-tar"/>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <environment insert="lib/pkgconfig" mode="prepend" name="PKG_CONFIG_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/libgit2-glib.xml">
+      <version not-before="0.0.12"/>
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/libgit2-glib.xml">
+      <environment insert="lib/pkgconfig" mode="prepend" name="PKG_CONFIG_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/libgit2.xml">
+      <version not-before="0.20.0"/>
+      <environment insert="lib/pkgconfig" mode="prepend" name="PKG_CONFIG_PATH"/>
+    </requires>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJTQav1AAoJEBn+koPecTkjKS0H/3OlBOHrBKo+JryJeaq4UpV7Yy1mU6t4Ohv4
+yrqzLrEkfiolvONj66gkaQnGDfn65gsHRNQh1mQenfs/0WFlovGRe4QrttmT3H1ykU4im1KWQUIb
+23Exgn0Db+4D8fGqLKTMQHzN+0f8lVO9Gc59lDY+/xL+CTTQZRpxghuOy6UBRGNR3CO18nCGISRj
+GPS0YLlkEISi1PHQvtMJGSxb5XeEC08qbhYqjSiwEP96l97DGR1bM2aY537ZlNnG23Vt2MsJeBUC
+RoGkLD9gdbQSJx1fxN97VRKLETHI3TeuXoeebINFPTXfwP0VpTYA74XARzqgyjmsl+s/sasy9Wri
+JIU=
+
+-->

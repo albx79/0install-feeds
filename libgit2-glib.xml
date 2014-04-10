@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://www.albx79.it/0install/libgit2-glib.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:compile="http://zero-install.sourceforge.net/2006/namespaces/0compile">
+  <name>libgit2-glib</name>
+  <summary>a glib wrapper library around the libgit2 git access library</summary>
+  <description>
+libgit2-glib is a glib wrapper library around the libgit2 git access library.
+
+libgit2 only implements the core plumbing functions, not really the higher
+
+level porcelain stuff. For a primer on Git Internals that you will need to know
+
+to work with Git at this level, check out [Chapter 9][pg] of the Pro Git book.</description>
+  <homepage>https://github.com/GNOME/libgit2-glib</homepage>
+  <implementation arch="*-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=884572dfee957ac4d1c47b96435fb527b63f9cf5" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-04-06" stability="stable" version="0.0.12">
+    <archive extract="libgit2-glib-0.0.12" href="http://ftp.gnome.org/pub/gnome/sources/libgit2-glib/0.0/libgit2-glib-0.0.12.tar.xz" size="396768" type="application/x-xz-compressed-tar"/>
+    <requires interface="http://www.albx79.it/0install/libgit2.xml">
+      <version not-before="0.20.0"/>
+      <environment insert="lib/pkgconfig/" mode="prepend" name="PKG_CONFIG_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <version not-before="2.38.0"/>
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/libgit2.xml">
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+  </implementation>
+  <implementation arch="Linux-x86_64" id="sha1new=b4491737dd53b798e6ddcf0d44bf130a8a898ba9" released="2014-04-06" stability="stable" version="0.0.12">
+    <archive extract="libgit2-glib-linux-x86_64-0.0.12" href="http://www.albx79.it/0install/libgit2-glib-linux-x86_64-0.0.12.tar.bz2" size="335322" type="application/x-bzip-compressed-tar"/>
+    <requires interface="http://www.albx79.it/0install/libgit2.xml">
+      <version not-before="0.20.0"/>
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <version not-before="2.38.2"/>
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJTQakaAAoJEBn+koPecTkjAXYH/RJPfxZ87MPZVjahtnjFGuebSsxTnqs6/BMg
+c+Cu7QM9SLD6+LO8edMrn0qxDLw/h00VzbKvsGQjmXtEON0PM7nt+LKS2TVKi2Wkfuxl2k3/+JQG
+hk3V6m9uFodAxPVwoYFwuWJ0DR5AF5ZfEN/OlCFYFdXYaFik5rTFowJdRy89JBx7+GsA5mjyv8Ju
+VF+ie2lxSbMDXLIsqA7HLd8s55d2AcHOJDFDcllJRSVdHHkdQ2LQz/mzuCCrf3bGN0tiFQps3fUL
+HilRY1BuHCa+uZ51oIqdd1HbYEes316pothuxJvLTOWN2VrzU8ntKUSg8fj7C0nFknqqNEOscO9Q
+5bw=
+
+-->
