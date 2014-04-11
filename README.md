@@ -1,7 +1,7 @@
 The Goal
 ========
 
-To create all feeds necessary, in order to run gitg3 on CentOS 5.
+To create all feeds necessary, in order to run gitg3 on CentOS 6.
 
 Done So Far
 ===========
