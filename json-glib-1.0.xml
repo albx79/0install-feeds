@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://www.albx79.it/0install/json-glib-1.0.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:compile="http://zero-install.sourceforge.net/2006/namespaces/0compile">
+  <name>json-glib-1.0</name>
+  <summary>serialization and deserialization support for JSON</summary>
+  <description>
+JSON-GLib is a library providing serialization and deserialization support for
+the JavaScript Object Notation (JSON) format described by RFC 4627.</description>
+  <homepage>https://wiki.gnome.org/action/show/Projects/JsonGlib</homepage>
+  <category>Development</category>
+  <implementation arch="*-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=11801adc6516ec17fa0f3febcb518fb5a05d491a" license="OSI Approved :: GNU General Public License v2.1" released="2014-04-13" stability="stable" version="0.16.2">
+    <archive extract="json-glib-0.16.2" href="https://download.gnome.org/sources/json-glib/0.16/json-glib-0.16.2.tar.xz" size="506640" type="application/x-xz-compressed-tar"/>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <version not-before="2.38.2"/>
+      <environment insert="lib/pkgconfig" mode="prepend" name="PKG_CONFIG_PATH"/>
+    </requires>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+  </implementation>
+  <implementation arch="Linux-x86_64" id="sha1new=35faa7d3cb1848e88effe39cf65541c46428c6e3" released="2014-04-13" stability="stable" version="0.16.2">
+    <archive extract="json-glib-1.0-linux-x86_64-0.16.2" href="http://www.albx79.it/0install/json-glib-1.0-linux-x86_64-0.16.2.tar.bz2" size="255159" type="application/x-bzip-compressed-tar"/>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <version not-before="2.38.2"/>
+      <environment insert="lib" mode="prepend" name="LD_LIBRARY_PATH"/>
+    </requires>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJTStF1AAoJEBn+koPecTkjQc8IALaFqNk31NTPA5OruNZ1YLMj6BvwOyE1+nX3
+VpdRoWWP6Mbv7UXTlqkChyU/YoCXEWWYrOA5IWiG0zmwMpxBW8hw6VM0QxOfEk9706ar1YxNeEcg
+m5Lz586hbnXxARTmwHm2T8+MrBxv9XP3+QTibgbl0LF/l6Wmu7iD4kZgpFX9XI6hWr6eUoizMWU9
+r3M/9Vpbs7Aaxyryjuczwd4CfO1EptY+lWtY3laHcIsawTaylKDFtRmE3VHS4CfrRyfTAOT5BbG8
+qm9zxV8TImGCJCaoHMV2c2uOCx/n8EuWvK1Xnf0zRdAxut/hKmxWh/50V9+HGtsMqg1GZ0/Y/EJM
+7kE=
+
+-->
