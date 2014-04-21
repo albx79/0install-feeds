@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://www.albx79.it/0install/libgee.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:compile="http://zero-install.sourceforge.net/2006/namespaces/0compile">
+  <name>libgee</name>
+  <summary>GObject collection library</summary>
+  <description>
+Libgee is an utility library providing GObject-based interfaces and classes for
+commonly used data structures.</description>
+  <homepage>https://wiki.gnome.org/Projects/Libgee</homepage>
+  <implementation arch="*-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=0b05e48061ba4a1b88f3b96b58b8bf41376dbb79" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2013-09-02" stability="stable" version="0.8.8">
+    <archive extract="libgee-0.8.8" href="https://download.gnome.org/sources/libgee/0.8/libgee-0.8.8.tar.xz" size="586780" type="application/x-xz-compressed-tar"/>
+  </implementation>
+  <implementation arch="*-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; --disable-introspection &amp;&amp; make install" id="sha1new=1271491766c6c1d3603447fcb9b365f5eaccab4f" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-04-13" stability="stable" version="0.14.0">
+    <archive extract="libgee-0.14.0" href="https://download.gnome.org/sources/libgee/0.14/libgee-0.14.0.tar.xz" size="641732" type="application/x-xz-compressed-tar"/>
+    <requires interface="http://www.albx79.it/0install/glib-2.0.xml">
+      <version not-before="2.38.2"/>
+      <environment insert="lib/pkgconfig" mode="prepend" name="PKG_CONFIG_PATH"/>
+    </requires>
+  </implementation>
+  <implementation arch="Linux-x86_64" id="sha1new=91248e98a95691bdcf0841c2a74ee0fe49c24fe2" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-04-21" stability="stable" version="0.14.0">
+    <archive extract="libgee-linux-x86_64-0.14.0" href="http://SITE/libgee-linux-x86_64-0.14.0.tar.bz2" size="1328711" type="application/x-bzip-compressed-tar"/>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJTVUfPAAoJEBn+koPecTkju4MH/jbqRrTyJwoe+XAt7GxwAdyE+kdof70ErdO4
+Nnzvs7dEoIYcjnUUazuC9/Ph9VWwNQaSwOrWxD3LPYW1GS6YA5yH1pNY7vxjcc/e9gkY51cUqx+e
+d6dCA8gfEY0ocD8PjtQjWWYBi0jD40RzhtfDIKWkTOnyCdOplT4bNx3c41iZZuNHlu/R/J6/8r4D
+ppLM2C/hrmZy8uw3RVU3Qx8cGbIQBC4R1rngOOceLsokXB7VWcSyg8Y7x6e+7/zf/k+M5lpoP1CT
+QS3ws2jHrj6DYKNKI4Q9JU+LAtPuCtSg7qSE6zaz6vttDtBA+jKxA05hDQ6FM9+9IcoUwsrYcxsJ
+198=
+
+-->

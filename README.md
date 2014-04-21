@@ -12,12 +12,12 @@ Done So Far
  * Patch libgit2 to make pkgconfig file relocatable (use e.g. gobject-introspection as a reference). See http://github.org/albx79/libgit2.
  * With patched libgit2, compile libgit2-glib.
  * json-glib-1.0
+ * No package 'gee-0.8' found
+ ** I had to disable generating introspection (gir) files, because it would insist installing them in /usr/share
  
 Still To Do
 ===========
 
  * Requested 'gtk+-3.0 >= 3.10.0' but version of GTK+ is 3.4.2
  * No package 'webkit2gtk-3.0' found
- * No package 'gee-0.8' found
- ** find out how to install into a custom prefix as regular user
 
