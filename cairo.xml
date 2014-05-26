@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type='text/xsl' href='interface.xsl'?>
+<interface uri="http://www.albx79.it/0install/cairo.xml" xmlns="http://zero-install.sourceforge.net/2004/injector/interface" xmlns:compile="http://zero-install.sourceforge.net/2006/namespaces/0compile">
+  <name>cairo</name>
+  <summary>2D graphics library with support for multiple output devices</summary>
+  <description>
+Cairo is a 2D graphics library with support for multiple output devices.
+Currently supported output targets include the X Window System (via both Xlib
+and XCB), Quartz, Win32, image buffers, PostScript, PDF, and SVG file output.
+Experimental backends include OpenGL, BeOS, OS/2, and DirectFB.
+
+Cairo is designed to produce consistent output on all output media while taking
+advantage of display hardware acceleration when available (eg. through the X
+Render Extension).
+
+The cairo API provides operations similar to the drawing operators of PostScript
+and PDF. Operations in cairo including stroking and filling cubic Bézier
+splines, transforming and compositing translucent images, and antialiased text
+rendering. All drawing operations can be transformed by any affine
+transformation (scale, rotation, shear, etc.)
+
+Cairo is implemented as a library written in the C programming language, but
+bindings are available for several different programming languages.
+
+Cairo is free software and is available to be redistributed and/or modified
+under the terms of either the GNU Lesser General Public License (LGPL) version
+2.1 or the Mozilla Public License (MPL) version 1.1 at your option.</description>
+  <homepage>http://cairographics.org/</homepage>
+  <category>Development</category>
+  <implementation arch="*-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=82ec041cd54fdd80fc14eafacbf7e6037c8c5303" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-05-26" stability="stable" version="1.12.16">
+    <archive extract="cairo-1.12.16" href="http://cairographics.org/releases/cairo-1.12.16.tar.xz" size="35889824" type="application/x-xz-compressed-tar"/>
+  </implementation>
+  <implementation arch="Linux-x86_64" id="sha1new=9d1efa5306bec5666f82d90d6ccc830ddaf26cbd" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-05-26" stability="stable" version="1.12.16">
+    <archive extract="cairo-linux-x86_64-1.12.16" href="http://www.albx79.it/0install/cairo-linux-x86_64-1.12.16.tar.bz2" size="17097291" type="application/x-bzip-compressed-tar"/>
+  </implementation>
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJTg3HgAAoJEBn+koPecTkjSR4H/1SjgL5x6BdYoIKxw6PF9iI9ETaZcAvG4csW
+NnFaqwH8xGDLo8RNSRpQ51gUC7dWTer+DdAx8qIv5r4DcfDJaqvWVPdVysJq3zFm7R6hcg3ZQdJW
+JHnnxko7UNY/DIDk3z0earQTt8UzfLoG7pZzvjWbFf5dC1cQrY0fqlUr6DpbzZCwvN0LGQEXOSaF
+b3RTLdjBxFsFFVX4eu6ILBe/3qsb7KcTt+RvjUnTE1Qc7kBD8jiNiNSuW5rfwZ+o20OSYG/Wpo2M
+p+HjhT99Jld89b5/48OYFEJo8SLZkxv7YlP9+zSlDqeNeqtNvzPdd60Hcz9GtP1x5e+5j2VjZPh3
+9G8=
+
+-->

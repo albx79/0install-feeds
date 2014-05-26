@@ -12,16 +12,16 @@ full access to view and control running applications.</description>
   <implementation arch="*-src" compile:command="&quot;$SRCDIR/configure&quot; --prefix=&quot;$DISTDIR&quot; &amp;&amp; make install" id="sha1new=55bfd8db90bddd4557c51fb483e150a2fc487cf0" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-05-26" stability="stable" version="2.8.0">
     <archive extract="atk-2.8.0" href="http://ftp.gnome.org/pub/gnome/sources/atk/2.8/atk-2.8.0.tar.xz" size="634052" type="application/x-xz-compressed-tar"/>
   </implementation>
-  <implementation arch="Linux-x86_64" id="sha1new=8b4a0825be1d9692f3ac9f07135791f213003d1f" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-05-26" stability="stable" version="64-2.8.0">
+  <implementation arch="Linux-x86_64" id="sha1new=8b4a0825be1d9692f3ac9f07135791f213003d1f" license="OSI Approved :: GNU Lesser General Public License (LGPL)" released="2014-05-26" stability="stable" version="2.8.0">
     <archive extract="atk-linux-x86_64-2.8.0" href="http://www.albx79.it/0install/atk-linux-x86_64-2.8.0.tar.bz2" size="399404" type="application/x-bzip-compressed-tar"/>
   </implementation>
 </interface>
 <!-- Base64 Signature
-iQEcBAABAgAGBQJTg2nmAAoJEBn+koPecTkjqT4H/05KjBsDyV6WVpJlP2WwsbOvDqIVKDQvjxvV
-kEZ1wZ7KDUisp4BxzeuYBbVgVF3+yIlRoDYn21k/r+vFRJFdaU/cSLgf1TVH1xv7Se13Of75YZ1+
-sNsyEzmuvvJncdDkrRa4nGRzqlkOfzZaEcdGjGTI60+5H4GRKouI6El7ishDnHgMxSU7Vx8M1aii
-0tWHeeOciw4YMkLJ/oiT5/nQLaMeNZfLcTXZYWKmiREj/NbX4xwv9LcyOU5MgDZLXHYLU/61lhft
-wrYuR3Fy3SGIwT+sOlupGBA8BGX8F0oPB/biMZlPGWYWn5kRBOT9XV3ecg6qo+pL80ViLB2DDOPh
-nkU=
+iQEcBAABAgAGBQJTg3IIAAoJEBn+koPecTkjOX8IAMej1dPhxHQoqyILipx16pq78Cr9DTHaKvmw
+gEpXGV2B6q88eG6Y30tnRrrk8P/4OH2K6uo1Yo5vHGukMMQIcculgz0SNZo/WH4mIAVSuiU1TrC/
+Ld4oZ5FA62Rbyg33Ekk2Z9UJZsLI2BYzYwA6wAM49Iy/Um1OZPt8QfLFlWMe2c+9Gr6kTDD1qlIQ
+z9xiZx0q/jlx2UAcBQS/falslehsOeCWrGoJb+WO5CUBY7GZyWPNP2vYcUA3/w2dmOHxEM7sC847
+OreMDut+7RsGjEeHexuPNyRpKdEj7Y7Tj/5o/QvvQ8n/X5s4ugOiHZpmGrMbm62UxWuOBVI6PdQD
+DXQ=
 
 -->
